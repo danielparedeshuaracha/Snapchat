@@ -1,13 +1,6 @@
-//
-//  AppDelegate.swift
-//  Snapchat
-//
-//  Created by usuario on 10/27/21.
-//  Copyright © 2021 empresa. All rights reserved.
-//
 
 import UIKit
-
+import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,6 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
         return true
     }
 
